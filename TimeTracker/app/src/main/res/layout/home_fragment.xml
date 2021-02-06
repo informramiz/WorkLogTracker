@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/home_welcome_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/home_role_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/home_working_hours_count_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/home_logout_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/home_progress_bar"
+        layout="@layout/progress_bar" />
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/workLogsFragment">
+
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/main"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="github.informramiz.timetracker.view.home.HomeFragment"
+        android:label="@string/home_fragment_title"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="github.informramiz.timetracker.view.login.LoginFragment"
+        android:label="@string/login_fragment_title"
+        tools:layout="@layout/login_fragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="github.informramiz.timetracker.view.settings.SettingsFragment"
+        android:label="@string/settings_fragment_title"
+        tools:layout="@layout/settings_fragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_editUserFragment"
+            app:destination="@id/editUserFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createUserFragment"
+        android:name="github.informramiz.timetracker.view.createuser.CreateUserFragment"
+        android:label="@string/create_user_fragment_title"
+        tools:layout="@layout/create_user_fragment" />
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="github.informramiz.timetracker.view.users.UsersFragment"
+        android:label="@string/users_fragment_title"
+        tools:layout="@layout/users_fragment">
+        <action
+            android:id="@+id/action_usersFragment_to_createUserFragment"
+            app:destination="@id/createUserFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_editUserFragment"
+            app:destination="@id/editUserFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_workLogsFragment"
+            app:destination="@id/workLogsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUserFragment"
+        android:name="github.informramiz.timetracker.view.edituser.EditUserFragment"
+        android:label="@string/edit_user_fragment_title"
+        tools:layout="@layout/edit_user_fragment">
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workLogFragment"
+        android:name="github.informramiz.timetracker.view.createworklog.WorkLogFragment"
+        android:label="@string/work_log_fragment_title"
+        tools:layout="@layout/work_log_fragment">
+        <argument
+            android:name="userId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <argument
+            android:name="workLogId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workLogsFragment"
+        android:name="github.informramiz.timetracker.view.worklogs.WorkLogsFragment"
+        android:label="@string/work_logs_fragment_title"
+        tools:layout="@layout/work_logs_fragment" >
+        <argument
+            android:name="userId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_workLogsFragment_to_workLogFragment"
+            app:destination="@id/workLogFragment" />
+    </fragment>
+</navigation>

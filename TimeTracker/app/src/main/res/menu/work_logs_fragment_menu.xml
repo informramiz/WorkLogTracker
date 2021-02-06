@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/work_logs_action_filter"
+        android:title="@string/work_logs_fragment_action_filter_label"
+        android:icon="@drawable/ic_filter_24"
+        app:showAsAction="ifRoom"/>
+</menu>
