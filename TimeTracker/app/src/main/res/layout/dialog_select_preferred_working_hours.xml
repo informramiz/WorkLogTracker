@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_preferred_working_hours_dialog_fragment_title"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hours_exposed_dropdown_menu"
+        style="@style/App.Widget.ExposedDropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:minWidth="@dimen/min_text_field_width"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/work_log_fragment_hours_label">
+
+        <AutoCompleteTextView
+            android:id="@+id/hours_auto_complete_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_preferred_working_hours_dialog_cancel_button_label"
+            android:layout_gravity="end"
+            style="@style/App.Widget.Button.TextButton.Dialog.Flush.Negative"/>
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_preferred_working_hours_dialog_ok_button_label"
+            android:layout_gravity="end"
+            style="@style/App.Widget.Button.TextButton.Dialog.Flush"/>
+    </LinearLayout>
+</LinearLayout>

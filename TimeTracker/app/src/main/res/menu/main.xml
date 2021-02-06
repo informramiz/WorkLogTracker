@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/user_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/workLogsFragment"
+            android:title="@string/drawer_layout_home_action_label"
+            android:checked="true" />
+
+        <item
+            android:id="@+id/settingsFragment"
+            android:title="@string/drawer_layout_settings_action_label" />
+    </group>
+
+    <group
+        android:id="@+id/user_manager_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/usersFragment"
+            android:title="@string/drawer_layout_users_action_label" />
+
+        <item
+            android:id="@id/settingsFragment"
+            android:title="@string/drawer_layout_settings_action_label" />
+    </group>
+
+    <group
+        android:id="@+id/admin_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@id/usersFragment"
+            android:title="@string/drawer_layout_users_action_label" />
+
+        <item
+            android:id="@id/settingsFragment"
+            android:title="@string/drawer_layout_settings_action_label" />
+    </group>
+</menu>

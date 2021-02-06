@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "42319932962",
+    "project_id": "time-tracker-6441f",
+    "storage_bucket": "time-tracker-6441f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42319932962:android:c3bd137e6b6655d7bea47b",
+        "android_client_info": {
+          "package_name": "github.informramiz.timetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42319932962-h8fpr8u98s6ief06jsn9839skrnfrpvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "github.informramiz.timetracker",
+            "certificate_hash": "652def33b8c0473d2aad4c0834dbb057793c4af5"
+          }
+        },
+        {
+          "client_id": "42319932962-bn18luh2rho2pmod8428cmjpqb75bsi4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR0xGpnweOp3jnh4s3bquCXS0xvBsIc2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42319932962-bn18luh2rho2pmod8428cmjpqb75bsi4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
